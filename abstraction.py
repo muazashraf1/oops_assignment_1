@@ -11,32 +11,32 @@
 
 # ==== Solution
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Payment(ABC):
-#     @abstractmethod
-#     def process_payment(self, amount):
-#         pass
+class Payment(ABC):
+    @abstractmethod
+    def process_payment(self, amount):
+        pass
 
-# # p1 = Payment()   # --> it is not possible
+# p1 = Payment()   # --> it is not possible
 
-# class CreditCardPayment(Payment):
-#     def process_payment(self, amount):
-#         print(f"Processing {amount} via credit card")
+class CreditCardPayment(Payment):
+    def process_payment(self, amount):
+        print(f"Processing {amount} via credit card")
     
     
-# class PayPalPayment(Payment):
-#     def process_payment(self, amount):
-#         print(f"Processing {amount} via paypal")
+class PayPalPayment(Payment):
+    def process_payment(self, amount):
+        print(f"Processing {amount} via paypal")
 
-# def make_payment(payment_method, amount):
-#     payment_method.process_payment(amount)
+def make_payment(payment_method, amount):
+    payment_method.process_payment(amount)
 
-# p1 = CreditCardPayment()
-# p2 = PayPalPayment()
+p1 = CreditCardPayment()
+p2 = PayPalPayment()
 
-# make_payment(p1, 200)
-# make_payment(p2, 300)
+make_payment(p1, 200)
+make_payment(p2, 300)
 
 
 

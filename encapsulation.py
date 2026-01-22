@@ -12,39 +12,39 @@
 
 # ===== Solution
 
-# class Student:
-#     def __init__(self, name, student_id, grades):
-#         self.__name = name
-#         self.__student_id = student_id
-#         self.__grades = []
+class Student:
+    def __init__(self, name, student_id, grades):
+        self.__name = name
+        self.__student_id = student_id
+        self.__grades = []
     
-#     def get_name(self):
-#         return self.__name
-#     def get_student_id(self):
-#         return self.__student_id
-#     def get_grades(self):
-#         return self.__grades
+    def get_name(self):
+        return self.__name
+    def get_student_id(self):
+        return self.__student_id
+    def get_grades(self):
+        return self.__grades
     
-#     def add_grade(self, marks):
-#         self.__grades.append(marks)
+    def add_grade(self, marks):
+        self.__grades.append(marks)
     
-#     def calculate_ave(self):
-#         # total =  sum(self.__grades)
-#         # count = len(self.__grades)
-#         # return total / count
-#         if len(self.__grades) == 0:
-#             return 0
-#         else:
-#             return sum(self.__grades) / len(self.__grades)
+    def calculate_ave(self):
+        # total =  sum(self.__grades)
+        # count = len(self.__grades)
+        # return total / count
+        if len(self.__grades) == 0:
+            return 0
+        else:
+            return sum(self.__grades) / len(self.__grades)
 
-# s1 = Student("Muaz", 20, 10)
-# s1.add_grade(20)
-# s1.add_grade(30)
-# s1.add_grade(40)
+s1 = Student("Muaz", 20, 10)
+s1.add_grade(20)
+s1.add_grade(30)
+s1.add_grade(40)
 
-# print(s1.calculate_ave())
+print(s1.calculate_ave())
 
-# # print(s1.__grade)   --> it is not possible 
+# print(s1.__grade)   --> it is not possible 
 
 
 # ===================================================================================
